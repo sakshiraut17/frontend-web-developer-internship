@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Bistro & Lounge | Responsive Culinary Experience</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-leaf">🌿</span>
+        <span>Aura Bistro</span>
+      </a>
+      
+      <!-- Mobile Menu Toggle Button -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </label>
+
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">Our Story</a></li>
+          <li><a href="#menu" class="nav-link">Seasonal Menu</a></li>
+          <li><a href="#specials" class="nav-link">Chef's Table</a></li>
+          <li><a href="#reviews" class="nav-link">Testimonials</a></li>
+          <li><a href="#reservations" class="nav-btn">Book a Table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Responsive Hero Section -->
+    <section class="hero">
+      <div class="hero-wrapper">
+        <div class="hero-text-block">
+          <span class="sub-badge">Farm-to-Table Gastronomy</span>
+          <h1 class="hero-heading">Culinary Craftsmanship, Perfectly Served on Every Screen.</h1>
+          <p class="hero-description">Experience organic, locally sourced delicacies crafted with passion. Thoughtfully engineered to provide an effortless browsing experience across smartphone, tablet, and desktop viewports.</p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">View Seasonal Menu</a>
+            <a href="#reservations" class="btn btn-secondary">Reserve Experience</a>
+          </div>
+        </div>
+        <div class="hero-image-block">
+          <div class="image-card-container">
+            <div class="image-card main-dish">
+              <div class="food-badge">Chef's Special</div>
+              <div class="food-card-content">
+                <h3>Truffle Infused Risotto</h3>
+                <p>Wild forest mushrooms, aged parmesan crisp & white truffle oil.</p>
+                <span class="price-tag">$28.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics / Responsive Stats Bar -->
+    <section class="stats-bar">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Organic Ingredients</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">3 Stars</span>
+          <span class="stat-label">Michelin Guide Recommended</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Online Table Reservations</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">4.9 ★</span>
+          <span class="stat-label">Over 1,200 Reviews</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Responsive Menu Grid Section -->
+    <section id="menu" class="menu-section">
+      <div class="section-heading-box">
+        <span class="section-tag">Curated Selections</span>
+        <h2 class="section-title">Seasonal Specialties</h2>
+        <p class="section-desc">Our dishes adapt to seasonal harvests, just as our layout fluidly adapts to your screen size.</p>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Dish 1 -->
+        <article class="dish-card">
+          <div class="dish-visual dish-1"></div>
+          <div class="dish-body">
+            <div class="dish-header">
+              <h3 class="dish-name">Pan-Seared Sea Bass</h3>
+              <span class="dish-price">$34</span>
+            </div>
+            <p class="dish-desc">Wild Atlantic sea bass with saffron butter sauce, charred asparagus, and heirloom fingerling potatoes.</p>
+            <div class="dish-tags">
+              <span class="tag">Gluten-Free</span>
+              <span class="tag">Seafood</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 2 -->
+        <article class="dish-card">
+          <div class="dish-visual dish-2"></div>
+          <div class="dish-body">
+            <div class="dish-header">
+              <h3 class="dish-name">Smoked Ribeye Cut</h3>
+              <span class="dish-price">$42</span>
+            </div>
+            <p class="dish-desc">Prime grass-fed beef smoked over hickory wood, accompanied by garlic roasted broccolini and rosemary jus.</p>
+            <div class="dish-tags">
+              <span class="tag">Chef Signature</span>
+              <span class="tag">Prime Cut</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 3 -->
+        <article class="dish-card">
+          <div class="dish-visual dish-3"></div>
+          <div class="dish-body">
+            <div class="dish-header">
+              <h3 class="dish-name">Heirloom Burrata Bowl</h3>
+              <span class="dish-price">$22</span>
+            </div>
+            <p class="dish-desc">Artisanal Puglia burrata, colorful heirloom tomatoes, basil pesto drizzle, and cold-pressed extra virgin olive oil.</p>
+            <div class="dish-tags">
+              <span class="tag">Vegetarian</span>
+              <span class="tag">Organic</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 4 -->
+        <article class="dish-card">
+          <div class="dish-visual dish-4"></div>
+          <div class="dish-body">
+            <div class="dish-header">
+              <h3 class="dish-name">Artisan Matcha Tart</h3>
+              <span class="dish-price">$16</span>
+            </div>
+            <p class="dish-desc">Ceremonial grade Uji matcha ganache, toasted almond crust, raspberry coulis, and edible gold leaf.</p>
+            <div class="dish-tags">
+              <span class="tag">Dessert</span>
+              <span class="tag">Japanese Tea</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Multi-device Responsive Two-Column Feature -->
+    <section id="about" class="experience-section">
+      <div class="exp-grid">
+        <div class="exp-content">
+          <span class="section-tag">Atmosphere & Architecture</span>
+          <h2 class="section-title">Designed for Modern Comfort.</h2>
+          <p>Every element of Aura Bistro is intentionally curated — from ambient lighting to sustainable architectural furnishings. Similarly, our web interface enforces optimal typography contrast, fluid element scaling, and zero horizontal scrolling on all gadgets.</p>
+          <div class="feature-checklist">
+            <div class="check-item">
+              <span class="check-icon">✓</span>
+              <div>
+                <strong>Fluid Layout Technology</strong>
+                <p>CSS Grid & Flexbox combination ensuring no content degradation.</p>
+              </div>
+            </div>
+            <div class="check-item">
+              <span class="check-icon">✓</span>
+              <div>
+                <strong>Adaptive Media Queries</strong>
+                <p>Tailored breakpoints at 480px, 768px, 1024px, and 1280px viewports.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="exp-graphic">
+          <div class="device-preview-box">
+            <div class="preview-item desktop-view">Desktop Viewport (1200px+)</div>
+            <div class="preview-item tablet-view">Tablet Viewport (768px)</div>
+            <div class="preview-item mobile-view">Mobile Viewport (375px)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation CTA -->
+    <section id="reservations" class="reservation-section">
+      <div class="res-container">
+        <h2 class="res-title">Reserve Your Table Online</h2>
+        <p class="res-subtitle">Choose your preferred date, party size, and seating area instantly.</p>
+        <form class="res-form" onsubmit="event.preventDefault(); alert('Reservation simulated successfully!');">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-name">Full Name</label>
+              <input type="text" id="res-name" placeholder="Sakshi Raut" required>
+            </div>
+            <div class="form-group">
+              <label for="res-email">Email Address</label>
+              <input type="email" id="res-email" placeholder="sakshi@example.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-date">Date</label>
+              <input type="date" id="res-date" required>
+            </div>
+            <div class="form-group">
+              <label for="res-guests">Number of Guests</label>
+              <select id="res-guests">
+                <option value="2">2 Guests (Intimate Table)</option>
+                <option value="4" selected>4 Guests (Standard Dining)</option>
+                <option value="6">6 Guests (Booth)</option>
+                <option value="8+">8+ Guests (Private Room)</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-wrap">
+      <p>&copy; 2026 Aura Bistro. Frontend Web Developer Internship (Task 2: Responsive Web Design). Candidate: Sakshi (ID: 466235).</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CourseHub | Single Page Application (SPA) Simulation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Global Navigation Shell -->
+  <header class="app-shell-header">
+    <div class="shell-container">
+      <a href="#/" class="shell-brand">
+        <span class="brand-badge">🎓</span>
+        <span class="brand-title">CourseHub <small class="spa-badge">SPA</small></span>
+      </a>
+
+      <!-- SPA Client-Side Nav Links -->
+      <nav class="shell-nav">
+        <a href="#/" class="nav-link" data-route="/">Dashboard</a>
+        <a href="#/courses" class="nav-link" data-route="/courses">Explore Courses</a>
+        <a href="#/bookmarks" class="nav-link" data-route="/bookmarks">
+          My Saved <span id="bookmarkCountBadge" class="badge-count">0</span>
+        </a>
+        <a href="#/profile" class="nav-link" data-route="/profile">Candidate Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SPA Dynamic Root View Outlet -->
+  <main id="app-root" class="spa-root">
+    <!-- Dynamic views injected here by router.js without page reload -->
+    <div class="loading-spinner-wrap">
+      <div class="spinner"></div>
+      <p>Initializing Single Page Application...</p>
+    </div>
+  </main>
+
+  <footer class="shell-footer">
+    <div class="shell-container">
+      <p>&copy; 2026 CourseHub SPA. Frontend Web Developer Internship (Task 5: SPA Simulation). Candidate: Sakshi (ID: 466235).</p>
+    </div>
+  </footer>
+
+  <script src="router.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
